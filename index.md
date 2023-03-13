@@ -2,7 +2,7 @@
 
 When I did lab report 3, I researched the `grep` command and its options. This time, I'm going to research the `find` command and find some of its useful options that can further the command's efficiency in certain situations. I really liked this lab report because I felt like I learned a lot about how to use the terminal and a lot about options since I would get side tracked looking at other options and how they could be used. I thought it was a lot of fun to finally be able to look at commands and understand what they did since I know what the command itself and the options do. The way I did it during lab report 3 was to simply look up the command, followed by the words "options terminal". I then looked for the commands that seemed the most useful and most applicable to the directory I was working with. I know I would go through each command and try to find a practical use for each of them, the most practical I would write about in the report.
 
-**The options for this command were all found on these websites: [1](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/), [2](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/), [3](https://www.computerhope.com/unix/ufind.htm)
+**The options for this command were all found on these websites: [1](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/), [2](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/), [3](https://www.computerhope.com/unix/ufind.htm)**
 
 ---
 
