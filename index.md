@@ -74,4 +74,18 @@ $ find . -type d -delete
 
 When using the -delete option, nothing is printed out after running the command, as shown above. So to confirm that they actually worked I typed the same command and verified that there were no longer any files under the name "ch1.txt", which was true. In one of the previous options, it's clear that there were actually a couple files under that name, but after using the -delete option they no longer exist. The second command did run with no issues, but no directories were deleted. This is because the -delete option can only delete directories which are empty, and none of them were. This option is useful when needing to mass delete files or empty directories. Instead of going through and deleting them one-by-one, one command is all it takes to do the same.
 
-4. -
+4. -maxdepth [number]
+This option allows you to control how deep the find command searches by writing any number after the option.
+
+---
+```console
+$ find . -maxdepth 2 -type d
+.
+./written_2
+./written_2/non-fiction
+./written_2/travel_guides
+```
+
+```console
+$
+```
