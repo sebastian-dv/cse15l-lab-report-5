@@ -58,4 +58,20 @@ $ find . -type f
 ./written_2/non-fiction/OUP/Berk/ch7.txt
 ```
 
-These commands demonstrate the difference between searching for files and directories, specifically. The first command returns just the directories found within the given directory to search. The given directory was ".", which just means the current directory. 
+These commands demonstrate the difference between searching for files and directories, specifically. The first command returns just the locations of directories found within the given directory to search and the second only returned the location of files. The given directory was ".", which just means the current directory. This command is very useful when searching for a specific type of file, there are more types than just files and directories, but we did not learn about those in this class. (The second command's output was shortened because it was extremely long).
+
+3. -delete
+This option allows you to delete any files or empty directories that match the parameters given.
+
+---
+```console
+$ find . -name ch1.txt -delete
+```
+
+```console
+$ find . -type d -delete
+```
+
+When using the -delete option, nothing is printed out after running the command, as shown above. So to confirm that they actually worked I typed the same command and verified that there were no longer any files under the name "ch1.txt", which was true. In one of the previous options, it's clear that there were actually a couple files under that name, but after using the -delete option they no longer exist. The second command did run with no issues, but no directories were deleted. This is because the -delete option can only delete directories which are empty, and none of them were. This option is useful when needing to mass delete files or empty directories. Instead of going through and deleting them one-by-one, one command is all it takes to do the same.
+
+4. -
