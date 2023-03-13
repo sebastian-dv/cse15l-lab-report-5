@@ -22,5 +22,9 @@ $ find . -name ch1.txt
       ./written_2/non-fiction/OUP/Rybczynski/ch1.txt
       ./written_2/non-fiction/OUP/Kauffman/ch1.txt
       ./written_2/non-fiction/OUP/Fletcher/ch1.txt
-
 ```
+
+These commands both search for a file specified by the text written after the option -name. This way, the command will only return the locations of the files or directories which match the text. This is useful when searching through large files with many files when you're only looking for a single or handful of files. This only works if you know the exact name of the file.
+
+2. -type
+The -type option allows you to specify what kind of file to search for depending on the letter typed after the option. For example, f (file), d (directory), and more.
