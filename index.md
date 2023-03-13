@@ -17,7 +17,7 @@ $find . -name Algarve-History.txt
 
 ```console
 $find . -name ch1.txt            
-      ./written_2/non-fiction/OUP/Berk/ch1.txt
+            ./written_2/non-fiction/OUP/Berk/ch1.txt
       ./written_2/non-fiction/OUP/Abernathy/ch1.txt
       ./written_2/non-fiction/OUP/Rybczynski/ch1.txt
       ./written_2/non-fiction/OUP/Kauffman/ch1.txt
