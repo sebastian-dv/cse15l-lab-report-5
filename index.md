@@ -1,6 +1,6 @@
 # Going Back to Lab Report 3 #
 
-When I did lab report 3, I researched the `grep` command and its options. This time, I'm going to research the `find` command and find some of its useful options that can further the command's efficiency in certain situations.
+When I did lab report 3, I researched the `grep` command and its options. This time, I'm going to research the `find` command and find some of its useful options that can further the command's efficiency in certain situations. I really liked this lab report because I felt like I learned a lot about how to use the terminal and a lot about options since I would get side tracked looking at other options and how they could be used. I thought it was a lot of fun to finally be able to look at commands and understand what they did since I know what the command itself and the options do. The way I did it during lab report 3 was to simply look up the command, followed by the words "options terminal". I then looked for the commands that seemed the most useful and most applicable to the directory I was working with. I know I would go through each command and try to find a practical use for each of them, the most practical I would write about in the report.
 
 **The options for this command were all found on these websites: [1](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/), [2](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/), [3](https://www.computerhope.com/unix/ufind.htm)
 
@@ -12,16 +12,16 @@ The -name option searches for a file or directory that is specified by the text 
 ---
 ```console
 $ find . -name Algarve-History.txt
-      ./written_2/travel_guides/berlitz2/Algarve-History.txt
+./written_2/travel_guides/berlitz2/Algarve-History.txt
 ```
 
 ```console
 $ find . -name ch1.txt            
-      ./written_2/non-fiction/OUP/Berk/ch1.txt
-      ./written_2/non-fiction/OUP/Abernathy/ch1.txt
-      ./written_2/non-fiction/OUP/Rybczynski/ch1.txt
-      ./written_2/non-fiction/OUP/Kauffman/ch1.txt
-      ./written_2/non-fiction/OUP/Fletcher/ch1.txt
+./written_2/non-fiction/OUP/Berk/ch1.txt
+./written_2/non-fiction/OUP/Abernathy/ch1.txt
+./written_2/non-fiction/OUP/Rybczynski/ch1.txt
+./written_2/non-fiction/OUP/Kauffman/ch1.txt
+./written_2/non-fiction/OUP/Fletcher/ch1.txt
 ```
 
 These commands both search for a file specified by the text written after the option -name. This way, the command will only return the locations of the files or directories which match the text. This is useful when searching through large files with many files when you're only looking for a single or handful of files. This only works if you know the exact name of the file.
@@ -87,5 +87,11 @@ $ find . -maxdepth 2 -type d
 ```
 
 ```console
-$
+$ find . -maxdepth 3 -type f
+./.DS_Store
+./written_2/non-fiction/.DS_Store
+./written_2/.DS_Store
+./written_2/travel_guides/.DS_Store
 ```
+
+Some directories can have a tremendous amount of files and directories within them, so it can be useful to sometimes only display the files within the chosen directory until a certain depth. Showing all files and directories can be overwhelming at times since it can fill your terminal many times over which can make it hard to find what you were looking for in the first place. If you know that what you're looking for isn't too deep into the chosen directory then using -maxdepth can make it much easier to find it, as seen in the commands above. The first command only shows the directories within the first two depth levels of the current directory. The second command only shows the files within the first three depth levels, which is none because .DS_Store is an invisible file that just stores information about how the file will be viewed, like its icons, and other view options.
